@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Main Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".ui.MyProfileActivity">
+
+        <!--Layout which holds the top two CardViews-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--CardView declaration-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_view_details"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <!--Another LinearLayout to hold the smaller componets-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLighterBooking"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!--ImageView to store the image.
+                 The image is subjective to the usage of the CardView-->
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/purplecircle"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_supervisor_account_white_24dp" />
+
+                    <!--TextView to tell the purpose of the CardView-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Details"
+                        android:textAllCaps="false"
+                        android:textStyle="bold" />
+
+                    <!--View – in this case a thin gray line
+                 which separates the purpose of the CardView from the description-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorGray" />
+
+                    <!--TextView to give a brief description of the CardView-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="View user details"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_viewBooking"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLighterBooking"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/purplecircle"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_perm_contact_calendar_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Appointment"
+                        android:textAllCaps="false"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Appointment details"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!--EditText fields for the
+         data which the user adds-->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="287dp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/et_surname"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="Surname" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="287dp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/et_blood"
+            android:layout_width="287dp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="Blood type" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="287dp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textboxesstyle"
+            android:ems="10"
+            android:hint="username"
+            android:enabled="false"
+            android:layout_marginBottom="10dp"/>
+
+        <!--LinearLayout which holds
+         the bottom two CardViews-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--CardView declaration-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_updateDetails"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <!--Another LinearLayout to hold the smaller componets-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLighterBooking"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!--ImageView to store the image.
+                 The image is subjective to the usage of the CardView-->
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/purplecircle"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_update_black_24dp" />
+
+                    <!--TextView to tell the purpose of the CardView-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Update"
+                        android:textAllCaps="false"
+                        android:textStyle="bold" />
+
+                    <!--View – in this case a thin gray line
+                 which separates the purpose of the CardView from the description-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorGray" />
+
+                    <!--TextView to give a brief description of the CardView-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Update user details"
+
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_back"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLighterBooking"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/purplecircle"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_undo_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Back to previous page"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

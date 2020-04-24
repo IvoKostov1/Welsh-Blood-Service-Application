@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--ScrollView for nevagting up and down-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <!--LinearLayout which keeps all the widgets on the screen-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorLighterBooking"
+        tools:context=".ui.Registration">
+
+        <!--LinearLayout which keeps the 2 blood drop images
+         and the ‘Registration”TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <!--ImageView which stores the blood drop picture-->
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="76dp"
+                android:src="@drawable/untitled"/>
+
+            <!--TextView which stores “Registration” sign
+             on on top of the activity -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="15dp"
+                android:text="Registration"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!--ImageView which stores the blood drop picture-->
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="76dp"
+                android:src="@drawable/untitled" />
+
+        </LinearLayout>
+
+        <!--Line, which separates the EditText fields from the top elements-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBlack"
+            android:layout_margin="10dp"/>
+
+        <!--EditText fields for the username, email and password of the user-->
+        <EditText
+            android:id="@+id/et_Username"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your username"
+            android:background="@drawable/textboxesstyle"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your e-mail"
+            android:background="@drawable/textboxesstyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:background="@drawable/textboxesstyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"/>
+
+        <!--Button to complete the registration process-->
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonstyle"
+            android:layout_marginTop="20dp"
+            android:text="Register" />
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorCorrectGreen">#32CD32</color>
+    <color name="colorBooking">#FAEDCA</color>
+    <color name="colorButton">#454046</color>
+    <color name="colorGray">#B3CCC0</color>
+    <color name="colorPurple">#7c4dff</color>
+    <color name="colorYellow">#ffb300</color>
+    <color name="colorGreen2">#00bfa5</color>
+    <color name="colorDarkBlue">#23283a</color>
+    <color name="colorLighterBooking">#fffafa</color>
+    <color name="colorEditTextColor">#ecf5ff</color>
+    <color name="colorRegisterButton">#c5e0ff</color>
+    <color name="colorDarkRed">#a80000</color>
+    <color name="colorStepView">#ED1B24</color>
+</resources>
